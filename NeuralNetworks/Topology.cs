@@ -4,7 +4,7 @@ using System.Text;
 
 namespace NeuralNetworks
 {
-    class Topology
+    public class Topology
     {
         public int InputCount { get; }
         public int OutputCount { get; }

@@ -34,9 +34,14 @@ namespace NeuralNetworks
             {
                 sum += inputs[i] * Weights[i];
             }
-
-            // сигмойда
-            Output = Sigmoid(sum);
+            if (NeuronType != NeuronType.Input)
+            {
+                // сигмойда
+                Output = Sigmoid(sum);
+            }
+            {
+                Output = sum;
+            }
             return Output;
         }
         private double Sigmoid(double x)

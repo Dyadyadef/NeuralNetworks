@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace NeuralNetworks
 {
-    class NeuralNetwork
+    public class NeuralNetwork
     {
         public Topology Topology { get; }
         public List<Layer> Layers { get; }
